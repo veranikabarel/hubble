@@ -2,6 +2,7 @@ import GlobalStyles from "./components/styles/Global";
 import { ThemeProvider } from "styled-components";
 import Header from "./components/Header";
 import Card from "./components/Card";
+import Footer from "./components/Footer";
 import { Container } from "./components/styles/Container.styled";
 import content from './content';
 
@@ -26,6 +27,7 @@ function App() {
             <Card key={item} item={item} />
           ))}
         </Container>
+        <Footer />
       </>
     </ThemeProvider>
   );
